@@ -1,21 +1,17 @@
 import React from 'react';
+import Pokemon from '../components/Pokemon';
 import { usePokemonList } from '../contexts/PokemonListContext';
+import './Pokedex.css';
 
-function PokemonList() {
+function Pokedex() {
   const { pokemonList } = usePokemonList();
   return (
-    <>
+    <div className="pokedex">
       {pokemonList && pokemonList.slice(0, 493).map((pokemon) => (
-        <p>
-          {pokemon.entry_number}
-          {' '}
-          -
-          {' '}
-          {pokemon.pokemon_species.name}
-        </p>
+        <Pokemon pokemon={pokemon} />
       ))}
-    </>
+    </div>
   );
 }
 
-export default PokemonList;
+export default Pokedex;
