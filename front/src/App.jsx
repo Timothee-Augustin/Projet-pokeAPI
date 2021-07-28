@@ -1,17 +1,23 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { PokemonListProvider } from './contexts/PokemonListContext';
-import PokemonList from './components/PokemonList';
+import NavBar from './components/NavBar';
+import Routes from './pages/Routes';
 import './App.css';
 import Logo from './public/assets/logo.png';
 
 function App() {
   return (
     <PokemonListProvider>
-      <div className="App">
-        <img alt="logo" src={Logo} />
-        <h1>Hello Project</h1>
-        <PokemonList />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <div id="logo">
+            <img className="logo" alt="logo" src={Logo} />
+          </div>
+          <NavBar />
+          <Routes />
+        </div>
+      </BrowserRouter>
     </PokemonListProvider>
   );
 }
