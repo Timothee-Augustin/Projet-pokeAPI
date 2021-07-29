@@ -19,6 +19,7 @@ function PokemonDetails({ onePokemon }) {
         alt={onePokemon.forms[0].name}
       />
       ) }
+      {onePokemon && onePokemon.types[1] ? <p>{`${onePokemon.types[0].type.name} / ${onePokemon.types[1].type.name}`}</p> : <p>{`${onePokemon.types[0].type.name}`}</p>}
       {pokemonSpecies && <p>{pokemonSpecies.flavor_text_entries[1].flavor_text}</p>}
     </div>
   );
