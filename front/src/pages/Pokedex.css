@@ -3,15 +3,34 @@
   grid-template-columns: repeat(5, 1fr);
 }
 
+.pokemon-header{
+  display: flex;
+}
+
 .pokemon-content{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.pokemon-details{
+  text-align: center;
 }
 
 .sprite{
-  max-width: 96px;
+  max-width: 64px;
+  height: auto;
+}
+
+.artwork{
+  max-height: 150px;
+  width: auto;
+}
+
+.type{
+  display: flex;
+  justify-content: center;
 }
 
 button{
@@ -23,4 +42,100 @@ button{
 button:hover {
   color: goldenrod;
   text-decoration: underline;
+}
+
+.grass{
+  background-color: green;
+  color: white;
+}
+
+.fire{
+  background-color: red;
+  color: white;
+}
+
+.water{
+  background-color: cyan;
+  color: white;
+}
+
+.dragon{
+  background-color: blue;
+  color: white;
+}
+
+.electric{
+    background-color: yellow;
+    color: white;
+}
+
+.poison{
+  background-color: purple;
+  color: white;
+}
+
+.fighting{
+  background-color: brown;
+  color: white;
+}
+
+.rock{
+  background-color: rgb(161, 130, 90);
+  color: white;
+}
+
+.ground{
+  background-color: burlywood;
+  color: white;
+}
+
+.normal{
+  background-color: rgb(160, 142, 118);
+  color: white;
+}
+
+.ice{
+  background-color: lightsteelblue;
+  color: white;
+}
+
+.flying{
+  background-color: lightskyblue;
+  color: white;
+}
+
+.bug{
+  background-color: lightgreen;
+  color: white;
+}
+
+.psychic{
+  background-color: pink;
+  color: white;
+}
+
+.ghost{
+  background-color: rgb(105, 9, 105);
+  color: white;
+}
+
+.steel{
+  background-color: gray;
+  color: white;
+}
+
+.dark{
+  background-color: black;
+  color: white;
+}
+
+p{
+  margin-top: 0;
+}
+
+.type>h3 {
+  line-height: 8px;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: 15px;
 }
