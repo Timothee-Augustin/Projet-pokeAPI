@@ -3,15 +3,29 @@
   grid-template-columns: repeat(5, 1fr);
 }
 
+.pokemon-header{
+  display: flex;
+}
+
 .pokemon-content{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.pokemon-details{
+  text-align: center;
 }
 
 .sprite{
-  max-width: 96px;
+  max-width: 64px;
+  height: auto;
+}
+
+.artwork{
+  max-height: 150px;
+  width: auto;
 }
 
 button{
